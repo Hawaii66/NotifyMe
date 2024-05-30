@@ -121,7 +121,7 @@ export function HomePage() {
                   <h3 className="font-bold text-xl">Email</h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify can send notifications directly to your team's email
+                  Notify can send notifications directly to your teams email
                   inboxes, ensuring they never miss an important update.
                 </p>
               </div>
@@ -136,7 +136,7 @@ export function HomePage() {
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
                   Notify can deliver notifications via SMS or voice call,
-                  keeping your team informed even when they're on the go.
+                  keeping your team informed even when they are on the go.
                 </p>
               </div>
               <div className="gap-1 grid p-8 md:p-10">
@@ -179,7 +179,7 @@ export function HomePage() {
               <div className="gap-1 grid p-8 md:p-10">
                 <h3 className="font-bold text-xl">Scalable Infrastructure</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  NotifyMe's cloud-based infrastructure scales automatically to
+                  NotifyMe cloud-based infrastructure scales automatically to
                   handle your notification needs, no matter how large.
                 </p>
               </div>

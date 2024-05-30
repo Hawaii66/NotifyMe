@@ -75,7 +75,7 @@ async function ProjectDashboard({ project }: Props) {
                             type="submit"
                           >
                             {userId === user.id
-                              ? "Can't remove yourself"
+                              ? "Can not remove yourself"
                               : "Remove"}
                           </AlertDialogAction>
                         </form>

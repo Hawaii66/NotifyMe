@@ -43,7 +43,7 @@ export async function AddUserEmail(projectId: number, email: string) {
     .select("id")
     .eq("email", email)
     .single();
-  if (!idData.data) return "User doesn't exist";
+  if (!idData.data) return "User does not exist";
 
   await AddUser(projectId, idData.data.id);
 }

@@ -50,7 +50,7 @@ function Page() {
   const getLists = async (token: string) => {
     const boardResponse = await fetch(`/api/trello/lists?token=${token}`);
     if (boardResponse.status !== 200) {
-      setError("Couldn't load trello boards or lists");
+      setError("Could not load trello boards or lists");
       return;
     }
 

@@ -60,7 +60,7 @@ function VerifySecret({ serviceId }: Props) {
               const name = await TestSecret(serviceId, secret);
 
               if (name === false) {
-                alert("Secret doesn't match any in this service");
+                alert("Secret does not match any in this service");
               } else {
                 setName(name);
               }
