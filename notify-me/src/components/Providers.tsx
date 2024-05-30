@@ -54,7 +54,7 @@ function Providers({ providers }: Props) {
       </div>
       <div className="col-span-7 bg-black w-full h-[1px]" />
       {providers.map((provider, idx) => (
-        <ProviderRow idx={idx} provider={provider} />
+        <ProviderRow key={provider.id} idx={idx} provider={provider} />
       ))}
     </div>
   );

@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-function page() {
+function Page() {
   const searchParams = useSearchParams();
   const [error, setError] = useState("");
   const router = useRouter();
@@ -32,4 +32,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

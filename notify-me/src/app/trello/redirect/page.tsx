@@ -104,7 +104,9 @@ function Page() {
               </SelectTrigger>
               <SelectContent>
                 {boards.map((i) => (
-                  <SelectItem value={i.id}>{i.name}</SelectItem>
+                  <SelectItem key={i.id} value={i.id}>
+                    {i.name}
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
@@ -126,7 +128,9 @@ function Page() {
                   {boards
                     .find((i) => i.id === selectedBoard)!
                     .lists.map((i) => (
-                      <SelectItem value={i.id}>{i.name}</SelectItem>
+                      <SelectItem key={i.id} value={i.id}>
+                        {i.name}
+                      </SelectItem>
                     ))}
                 </SelectContent>
               </Select>

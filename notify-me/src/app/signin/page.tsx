@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
-function page() {
+function Page() {
   const url = `https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}&scope=user`;
 
   return (
@@ -14,4 +14,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

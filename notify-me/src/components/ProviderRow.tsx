@@ -90,7 +90,7 @@ function ProviderRow({ provider, idx }: Props) {
       <div>{provider.provider}</div>
       <ul>
         {provider.levels.map((i) => (
-          <li>• {i}</li>
+          <li key={i}>• {i}</li>
         ))}
       </ul>
       <div>

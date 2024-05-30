@@ -105,7 +105,9 @@ function Page() {
               </SelectTrigger>
               <SelectContent>
                 {channels.map((i) => (
-                  <SelectItem value={i.id}>{i.name}</SelectItem>
+                  <SelectItem key={i.id} value={i.id}>
+                    {i.name}
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
