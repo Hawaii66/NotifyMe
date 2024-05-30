@@ -1,0 +1,28 @@
+{
+  "name": "@hawaiidev/notify-me",
+  "version": "0.0.3",
+  "description": "Notify yourself about events in your code",
+  "scripts": {
+    "dev": "tsup ./src/index.ts && node dist/index.js init --service-id 6 --secret d9a2df89ab839d00 --write-env yes --destination /src/lib/notifyme.ts",
+    "convert": "tsup ./src/convert.ts && node dist/convert.js"
+  },
+  "keywords": [],
+  "author": "hawaiidev",
+  "license": "ISC",
+  "dependencies": {
+    "@antfu/ni": "^0.21.12",
+    "commander": "^12.1.0",
+    "execa": "^9.1.0",
+    "tsup": "^8.0.2",
+    "zod": "^3.23.8"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "bin": {
+    "notify-me": "./dist/index.js"
+  }
+}
