@@ -1,4 +1,5 @@
 import { SignIn } from "@/lib/server/auth";
+import { GetRandomId } from "@/lib/server/id";
 import { SignAccessToken, SignRefreshToken } from "@/lib/server/token";
 import { createClient } from "@/lib/supabase";
 import { NextRequest, NextResponse } from "next/server";
@@ -61,6 +62,7 @@ export const GET = async (request: NextRequest) => {
         image: user.avatar_url,
         name: user.name,
         github_id: user.id,
+        id: await GetRandomId(supabase, "notifyme_users"),
       })
       .select("id");
 

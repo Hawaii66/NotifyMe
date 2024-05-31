@@ -1,3 +1,4 @@
+import { GetRandomId } from "@/lib/server/id";
 import { HashSecret, VerifySecret } from "@/lib/server/secret";
 import { createClient } from "@/lib/supabase";
 import { NextRequest, NextResponse } from "next/server";
@@ -105,6 +106,7 @@ export const POST = async (
       description: info.description,
       title: info.title,
       level: info.level ?? "none",
+      id: await GetRandomId(supabase, "notifyme_notifications"),
     })
     .select("*")
     .single();

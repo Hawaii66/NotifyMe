@@ -3,6 +3,7 @@
 import { Service } from "@/types/Service";
 import { createClient } from "../supabase";
 import { GetSessionRedirect } from "./auth";
+import { GetRandomId } from "./id";
 
 export async function UserHasServiceAccess(serviceId: number | undefined) {
   if (!serviceId) return false;
@@ -49,6 +50,7 @@ export async function CreateService(service: {
       description: service.description,
       name: service.name,
       project: service.projectId,
+      id: await GetRandomId(supabase, "notifyme_services"),
     })
     .select("id");
 

@@ -6,6 +6,7 @@ import { createClient } from "../supabase";
 import { GetProjectServices } from "./service";
 import { GetProjectUsers } from "./user";
 import { GetSessionRedirect } from "./auth";
+import { GetRandomId } from "./id";
 
 export async function RemoveUser(projectId: number, userId: number) {
   const supabase = createClient();
@@ -23,10 +24,12 @@ export async function CreateProject(newProject: {
   color: string;
 }): Promise<number> {
   const supabase = createClient();
+
   const idData = await supabase
     .from("notifyme_project")
     .insert({
       ...newProject,
+      id: await GetRandomId(supabase, "notifyme_project"),
     })
     .select("id");
 
