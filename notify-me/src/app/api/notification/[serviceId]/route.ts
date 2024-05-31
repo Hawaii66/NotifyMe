@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { z } from "zod";
 
-const Levels = ["info", "warning", "error"] as const;
+const Levels = ["info", "warning", "error", "none"] as const;
 
 const responseDataSchema = z
   .object({

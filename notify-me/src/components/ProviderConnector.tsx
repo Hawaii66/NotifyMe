@@ -27,6 +27,14 @@ function ProviderConnector({ serviceId }: Props) {
 
   const router = useRouter();
 
+  if (typeof window === "undefined") {
+    return <p>No window</p>;
+  }
+
+  const host = window.location.host;
+  const protocol = window.location.protocol;
+  const url = `${protocol}//${host}`;
+
   const changeLevel = (active: CheckedState, level: NotificationLevel) => {
     if (active) {
       setLevels((t) => t.concat(level));
@@ -35,17 +43,20 @@ function ProviderConnector({ serviceId }: Props) {
     }
   };
 
+  if (host === undefined || protocol === undefined)
+    return <p>Loading Providers</p>;
+
   const redirectURLSlack = new URL(
-    "https://directalert.net/api/callback/slack"
+    `https://directalert.net/api/callback/slack`
   );
   redirectURLSlack.searchParams.append("levels", levels.join("-"));
   redirectURLSlack.searchParams.append("service", serviceId.toString());
 
-  const redirectURLTrello = new URL("https://directalert.net/trello/redirect");
+  const redirectURLTrello = new URL(`${url}/trello/redirect`);
   redirectURLTrello.searchParams.append("levels", levels.join("-"));
   redirectURLTrello.searchParams.append("service", serviceId.toString());
 
-  const redirectURLDiscord = new URL("https://directalert.net/discord");
+  const redirectURLDiscord = new URL(`${url}/discord`);
 
   const discordUrl = new URL("https://discord.com/oauth2/authorize");
   discordUrl.searchParams.append("client_id", "1244311670957015142");
@@ -61,7 +72,6 @@ function ProviderConnector({ serviceId }: Props) {
       })
     )
   );
-  //discordUrl.searchParams.append("scope", "bot+guilds");
 
   const discordUrlFormatted = `${discordUrl.toString()}&scope=bot+guilds`;
 

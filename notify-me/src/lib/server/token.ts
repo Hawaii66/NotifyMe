@@ -3,7 +3,7 @@ import * as jose from "jose";
 export async function SignAccessToken(userId: string) {
   const accessTokenSecret = process.env.ACCESS_TOKEN_SECRET;
   if (!accessTokenSecret) return undefined;
-  return await SignToken(userId, accessTokenSecret, "15s");
+  return await SignToken(userId, accessTokenSecret, "24h");
 }
 
 export async function SignRefreshToken(userId: string) {
