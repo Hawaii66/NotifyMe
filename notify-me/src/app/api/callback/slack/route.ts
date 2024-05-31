@@ -17,7 +17,7 @@ export const GET = async (request: NextRequest) => {
     return NextResponse.json({}, { status: 400 });
 
   const redirectURLSlack = new URL(
-    "https://notify-me.vercel.app/api/callback/slack"
+    "https://directalert.net/api/callback/slack"
   );
   redirectURLSlack.searchParams.append("levels", levels);
   redirectURLSlack.searchParams.append("service", serviceId.toString());

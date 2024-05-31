@@ -36,23 +36,17 @@ function ProviderConnector({ serviceId }: Props) {
   };
 
   const redirectURLSlack = new URL(
-    "https://notify-me.vercel.app/api/callback/slack"
+    "https://directalert.net/api/callback/slack"
   );
   redirectURLSlack.searchParams.append("levels", levels.join("-"));
   redirectURLSlack.searchParams.append("service", serviceId.toString());
 
-  const redirectURLTrello = new URL(
-    "http://localhost:3000/trello/redirect"
-    //`https://notify-me.vercel.app/api/callback/trello`
-  );
+  const redirectURLTrello = new URL("https://directalert.net/trello/redirect");
   redirectURLTrello.searchParams.append("levels", levels.join("-"));
   redirectURLTrello.searchParams.append("service", serviceId.toString());
 
-  const redirectURLDiscord = new URL("http://localhost:3000/discord");
-  //redirectURLDiscord.searchParams.append("levels", levels.join("-"));
-  //redirectURLDiscord.searchParams.append("service", serviceId.toString());
+  const redirectURLDiscord = new URL("https://directalert.net/discord");
 
-  //?client_id=1244311670957015142&permissions=3088&response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord&scope=bot+guilds
   const discordUrl = new URL("https://discord.com/oauth2/authorize");
   discordUrl.searchParams.append("client_id", "1244311670957015142");
   discordUrl.searchParams.append("permissions", "3088");
@@ -81,7 +75,7 @@ function ProviderConnector({ serviceId }: Props) {
   slackUrl.searchParams.append("redirect_uri", redirectURLSlack.toString());
 
   const trelloUrl = new URL("https://trello.com/1/authorize");
-  trelloUrl.searchParams.append("name", "NotifyMeToken");
+  trelloUrl.searchParams.append("name", "Direct Alert Token");
   trelloUrl.searchParams.append("scope", "write,read");
   trelloUrl.searchParams.append("response_type", "token");
   trelloUrl.searchParams.append(

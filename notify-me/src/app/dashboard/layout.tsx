@@ -17,7 +17,7 @@ async function Layout({ children }: Children) {
       <div className="min-h-screen">
         <nav className="flex flex-row justify-between items-center p-4 border-b">
           <Link href={"/"}>
-            <h1 className="font-bold text-2xl text-orange-500">NotifyMe</h1>
+            <h1 className="font-bold text-2xl text-orange-500">Direct Alert</h1>
           </Link>
           <div className="flex flex-row gap-4">
             <Link href={"/dashboard"}>

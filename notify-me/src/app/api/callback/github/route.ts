@@ -31,7 +31,7 @@ export const GET = async (request: NextRequest) => {
 
   const userResponse = await fetch("https://api.github.com/user", {
     headers: {
-      "User-Agent": "NotifyMe",
+      "User-Agent": "DirectAlert",
       Authorization: `Bearer ${token}`,
     },
   });

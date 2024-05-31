@@ -84,7 +84,7 @@ function Page() {
     <div className="flex justify-center items-center h-full min-h-screen">
       <Card>
         <CardHeader>
-          <CardTitle>Connect NotifyMe to a Trello list</CardTitle>
+          <CardTitle>Connect Direct Alert to a Trello list</CardTitle>
           <CardDescription>
             Select a board and list below and click connect when you are done
           </CardDescription>

@@ -86,7 +86,7 @@ function Page() {
     <div className="flex justify-center items-center h-full min-h-screen">
       <Card>
         <CardHeader>
-          <CardTitle>Connect NotifyMe to a Discord channel</CardTitle>
+          <CardTitle>Connect Direct Alert to a Discord channel</CardTitle>
           <CardDescription>
             Select a channel below and click connect when you are done
           </CardDescription>

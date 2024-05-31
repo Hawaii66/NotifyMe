@@ -24,7 +24,7 @@ export function HomePage() {
                     className="rounded-full w-20 aspect-square"
                   />
                   <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl/none tracking-tighter">
-                    NotifyMe
+                    Direct Alert
                   </h1>
                 </div>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -94,8 +94,8 @@ export function HomePage() {
                   <h3 className="font-bold text-xl">Slack</h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify integrates directly with Slack, allowing you to send
-                  notifications to your Slack channels and direct messages.
+                  Direct Alert integrates directly with Slack, allowing you to
+                  send notifications to your Slack channels and direct messages.
                 </p>
               </div>
               <div className="gap-1 grid p-8 md:p-10">
@@ -103,8 +103,8 @@ export function HomePage() {
                   <h3 className="font-bold text-xl">Discord</h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify can send notifications to your Discord servers keeping
-                  your team informed in real-time.
+                  Direct Alert can send notifications to your Discord servers
+                  keeping your team informed in real-time.
                 </p>
               </div>
               <div className="gap-1 grid p-8 md:p-10">
@@ -112,7 +112,7 @@ export function HomePage() {
                   <h3 className="font-bold text-xl">Trello</h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify can add cards your Trello boards with important
+                  Direct Alert can add cards your Trello boards with important
                   notifications, helping your team stay on top of their tasks.
                 </p>
               </div>
@@ -121,8 +121,8 @@ export function HomePage() {
                   <h3 className="font-bold text-xl">Email</h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify can send notifications directly to your teams email
-                  inboxes, ensuring they never miss an important update.
+                  Direct Alert can send notifications directly to your teams
+                  email inboxes, ensuring they never miss an important update.
                 </p>
               </div>
               <div className="gap-1 grid p-8 md:p-10">
@@ -135,7 +135,7 @@ export function HomePage() {
                   </h3>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify can deliver notifications via SMS or voice call,
+                  Direct Alert can deliver notifications via SMS or voice call,
                   keeping your team informed even when they are on the go.
                 </p>
               </div>
@@ -167,11 +167,11 @@ export function HomePage() {
                   Easy Setup and Reliable Notifications
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  NotifyMe is designed for <b>easy setup</b> and <b>reliable</b>{" "}
-                  notifications, efficiently handling high-volume communication.
-                  It ensures prompt and dependable message delivery, ideal for
-                  users who value <b>simplicity</b> and <b>reliability</b> in
-                  their notification systems
+                  Direct Alert is designed for <b>easy setup</b> and{" "}
+                  <b>reliable</b> notifications, efficiently handling
+                  high-volume communication. It ensures prompt and dependable
+                  message delivery, ideal for users who value <b>simplicity</b>{" "}
+                  and <b>reliability</b> in their notification systems
                 </p>
               </div>
             </div>
@@ -179,14 +179,14 @@ export function HomePage() {
               <div className="gap-1 grid p-8 md:p-10">
                 <h3 className="font-bold text-xl">Scalable Infrastructure</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  NotifyMe cloud-based infrastructure scales automatically to
-                  handle your notification needs, no matter how large.
+                  Direct Alert cloud-based infrastructure scales automatically
+                  to handle your notification needs, no matter how large.
                 </p>
               </div>
               <div className="gap-1 grid p-8 md:p-10">
                 <h3 className="font-bold text-xl">Reliable Delivery</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  With built-in retries and failover mechanisms, NotifyMe
+                  With built-in retries and failover mechanisms, Direct Alert
                   ensures your notifications are delivered, even in the face of
                   temporary network issues.
                 </p>
@@ -194,7 +194,7 @@ export function HomePage() {
               <div className="gap-1 grid p-8 md:p-10">
                 <h3 className="font-bold text-xl">Flexible Integrations</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Notify seamlessly integrates with your existing systems,
+                  Direct Alert seamlessly integrates with your existing systems,
                   allowing you to send notifications from your current services
                   over HTTPS
                 </p>
@@ -205,7 +205,7 @@ export function HomePage() {
       </main>
       <footer className="flex sm:flex-row flex-col items-center gap-2 px-4 md:px-6 py-6 border-t w-full shrink-0">
         <p className="text-gray-500 text-xs dark:text-gray-400">
-          © 2024 NotifyMe. All rights reserved.
+          © 2024 Direct Alert. All rights reserved.
         </p>
       </footer>
     </div>
